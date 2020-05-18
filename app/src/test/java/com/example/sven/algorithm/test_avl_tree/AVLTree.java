@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.LinkedList;
 import java.util.TreeMap;
 
+//平衡二叉树 是一种二叉排序树，每一个节点的左子树和右子树高度差至多为1
 public class AVLTree <T extends Comparable<T>>{
     TreeNode<T> root;//跟节点
     int size = 0;//树的元素大小

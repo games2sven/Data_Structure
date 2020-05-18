@@ -80,7 +80,6 @@ public class TestSerchSort {
       public void test(){
 //          int [] array = new int []{1,2,5,9,3,4,10,11};
 //          merge(array,0,(array.length-1)/2+1,array.length-1);\
-
           int[] array = new int[]{2,1,6,4,3,9,8,10,7,5};
           mergeSort(array,0,array.length-1);
           for (int i : array) {
@@ -91,8 +90,8 @@ public class TestSerchSort {
     /**
      * 归并排序 思想：二叉树的后序遍历
      * @param array
-     * @param left
-     * @param right
+     * @param left  0
+     * @param right 数组长度-1
      */
 
       public static void mergeSort(int[] array,int left,int right){
@@ -100,8 +99,11 @@ public class TestSerchSort {
               return;
           }else{
               int mid = (left+right)/2;
+              //左半边往下拆分
               mergeSort(array,left,mid);
+              //右半天边往下拆分
               mergeSort(array,mid+1,right);
+              //排序之后合并
               merge(array,left,mid+1,right);
           }
       }
@@ -111,7 +113,7 @@ public class TestSerchSort {
      */
     //1,2,5,9  ========  3,4 ,10 ,11
      public static void merge(int []array,int left,int mid ,int right){
-
+         System.out.print("left :"+left+" mid :"+ mid+" right: "+right);
          //1,将一个数组分成左右两个数组
          int leftSize = mid-left;
          int rightSize = right - mid + 1;

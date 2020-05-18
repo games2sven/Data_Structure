@@ -2,6 +2,9 @@ package com.example.sven.algorithm.test_binarysorttree;
 
 import java.util.NoSuchElementException;
 
+/**
+ * 二叉排序树
+ */
 public class BinarySortTree {
 
     TreeNode root;

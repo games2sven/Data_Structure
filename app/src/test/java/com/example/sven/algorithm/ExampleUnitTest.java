@@ -103,7 +103,6 @@ public class ExampleUnitTest {
 
     //顺序表的排序 （选择排序法）（试用场景：个位数的排序次数）
     public static void selectSort(int [] array){//两个两个比较，，选出最小的，然后拿最小的继续和后面做两两对比
-
         for(int i =0;i<array.length-1;i++){
             int index = i;
             for(int j = index+1;j<array.length;j++){
@@ -117,7 +116,6 @@ public class ExampleUnitTest {
                 array[i] = temp;
             }
         }
-
     }
 
 }

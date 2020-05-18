@@ -2,9 +2,15 @@ package com.example.sven.algorithm.test_rb_tree;
 
 import java.util.Comparator;
 
+/**
+ * 红黑树
+ * @param <K>
+ * @param <V>
+ *  对平衡树的改进.任意一个节点，他的左右子树的层次最多不超过一倍
+ */
 public class RBTree <K,V>{
 
-    TreeNode<K,V> root;//跟节点
+    TreeNode<K,V> root;//根节点
 
     private static final boolean RED   = false;
     private static final boolean BLACK = true;
